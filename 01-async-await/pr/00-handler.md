@@ -1,6 +1,6 @@
 +++
 file = "crates/miniserve/src/lib.rs"
-end-line-side = "left"
+end-line-side = "right"
 end-line = 32
 +++
 Take a close look at the change to the `Handler` trait. Previously, a
