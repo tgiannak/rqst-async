@@ -1,0 +1,2 @@
+Add support for Logger, refactor threads using new StatefulThread type
+
