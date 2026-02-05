@@ -1,7 +1,7 @@
 +++
 file = "crates/miniserve/src/lib.rs"
 end-line-side = "left"
-end-line = "32"
+end-line = 32
 +++
 Take a close look at the change to the `Handler` trait. Previously, a
 handler was a function that took a request and returned a response. Now, a
