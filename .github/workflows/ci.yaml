@@ -20,7 +20,7 @@ jobs:
       - name: Bundle quest
         run: |
           export RUST_LOG=debug
-          repo-quest-bundle --output rqst-async-quest.tgz dir --input "$GITHUB_WORKSPACE"
+          repo-quest bundle --input "$GITHUB_WORKSPACE" --output rqst-async-quest.tgz
       - uses: actions/upload-artifact@v6
         with:
           name: rqst-async-quest
