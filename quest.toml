@@ -5,6 +5,7 @@ rq-version = "0.3.0"
 description = """
 Async Rust tutorial.
 """
+test-cmd = ["cargo", "test"]
 
 main = ["00-initial-commit"]
 
