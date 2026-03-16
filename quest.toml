@@ -5,29 +5,21 @@ rq-version = "0.3.0"
 description = """
 Async Rust tutorial.
 """
-test-cmd = ["cargo", "test"]
-
 main = ["00-initial-commit"]
+test-cmd = ["cargo", "test"]
 
 [[chapters]]
 label = "00-chat-route"
-solution = ["00-implement-route", "01-fix-serde-version"]
+solution = ["00-implement-route"]
 
 [[chapters]]
 label = "01-async-await"
-scaffold = [
-  "00-port-miniserve-to-async",
-  "01-single-request",
-  "02-simplify-erasedhandler"
-]
+scaffold = ["00-port-miniserve-to-async", "01-single-request", "02-simplify-erasedhandler"]
 solution = ["00-port-to-async"]
 
 [[chapters]]
 label = "02-join"
-scaffold = [
-  "00-add-chatbot-crate",
-  "01-include-recent-message"
-]
+scaffold = ["00-add-chatbot-crate", "01-include-recent-message"]
 solution = ["00-join-solution"]
 
 [[chapters]]
@@ -42,19 +34,13 @@ solution = ["00-message-passing-solution"]
 
 [[chapters]]
 label = "05-many-futures"
-scaffold = [
-  "00-add-retrieval-augmented-generation",
-  "01-add-data",
-]
+scaffold = ["00-add-retrieval-augmented-generation", "01-add-data"]
 solution = ["00-add-solution"]
 
 [[chapters]]
 label = "06-select"
 scaffold = ["00-add-frontend-cancellation-support"]
-solution = [
-  "00-add-cancellation-solution",
-  "01-fix-lints",
-]
+solution = ["00-add-cancellation-solution", "01-fix-lints"]
 
 [[chapters]]
 label = "07-pin"
@@ -63,8 +49,5 @@ solution = ["00-log-when-waiting-too-long"]
 
 [[chapters]]
 label = "08-abstraction"
-scaffold = [
-  "00-add-logger-struct",
-  "01-restore-cargo-lock",
-]
+scaffold = ["00-add-logger-struct", "01-restore-cargo-lock"]
 solution = ["00-add-logger-support"]
