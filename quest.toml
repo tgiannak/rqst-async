@@ -14,7 +14,11 @@ solution = ["00-implement-route"]
 
 [[chapters]]
 label = "01-async-await"
-scaffold = ["00-port-miniserve-to-async", "01-single-request", "02-simplify-erasedhandler"]
+scaffold = [
+  { label = "00-port-miniserve-to-async", expected = "fail" },
+  { label = "01-single-request", expected = "fail" },
+  { label = "02-simplify-erasedhandler", expected = "fail" }
+]
 solution = ["00-port-to-async"]
 
 [[chapters]]
@@ -29,12 +33,15 @@ solution = ["00-spawn-query-chat"]
 
 [[chapters]]
 label = "04-message-passing"
-scaffold = ["00-add-emoji-counter"]
+scaffold = [{ label = "00-add-emoji-counter", expected = "fail" }]
 solution = ["00-message-passing-solution"]
 
 [[chapters]]
 label = "05-many-futures"
-scaffold = ["00-add-retrieval-augmented-generation", "01-add-data"]
+scaffold = [
+  { label = "00-add-retrieval-augmented-generation", expected = "fail" },
+  { label = "01-add-data", expected = "fail" }
+]
 solution = ["00-add-solution"]
 
 [[chapters]]
