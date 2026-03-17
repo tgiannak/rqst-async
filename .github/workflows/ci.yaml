@@ -17,6 +17,9 @@ jobs:
           branch: next
       - name: Checkout
         uses: actions/checkout@v6
+      - name: Test quest
+        run: |
+          repo-quest test --dir "$GITHUB_WORKSPACE"
       - name: Bundle quest
         run: |
           export RUST_LOG=debug
