@@ -5,7 +5,7 @@ title = "Update to new chatbot API"
 
 ### Functionality
 
-In {{ 04-message-passing pr }}, a colleague refactored the `chatbot::query_chat` function to become a method on a new `Chatbot` data structure. This method is also now stateful. Your task is to update the application server so it works with this new API.
+In {{04-message-passing.pr}}, a colleague refactored the `chatbot::query_chat` function to become a method on a new `Chatbot` data structure. This method is also now stateful. Your task is to update the application server so it works with this new API.
 
 ### Performance
 

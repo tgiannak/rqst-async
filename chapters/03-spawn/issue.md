@@ -5,9 +5,9 @@ title = "Fix latency of compute-intensive chatbot"
 
 ### Performance
 
-In {{ 03-spawn pr }}, a colleague modified the `chatbot::query_chat` function to become compute-intensive (blocking the thread it's called on). This unfortunately seems to have caused the latency of the `chat` route to increase to 4 seconds again. Your task is to fix this situation and reduce the latency of the route back to 2 seconds. 
+In {{03-spawn.pr}}, a colleague modified the `chatbot::query_chat` function to become compute-intensive (blocking the thread it's called on). This unfortunately seems to have caused the latency of the `chat` route to increase to 4 seconds again. Your task is to fix this situation and reduce the latency of the route back to 2 seconds. 
 
-**Bonus challenge:** Your solution should not require cloning any more data than was required before {{ 03-spawn pr }}.
+**Bonus challenge:** Your solution should not require cloning any more data than was required before {{03-spawn.pr}}.
 
 ## Background
 
@@ -62,7 +62,7 @@ impl SumState {
 ```
 
 Once you understand async futures as state machines, this reveals several important facts.
-1. As first described in {{ 02-join issue }}, the code in a future does not run until the future is polled.
+1. As first described in {{02-join.issue}}, the code in a future does not run until the future is polled.
 2. Futures do not inherently run in parallel. Futures do not magically start executing on a new thread.
 3. Futures "hold on" to their data, including parameters, inside an enum. This will have implications later for ownership!
 

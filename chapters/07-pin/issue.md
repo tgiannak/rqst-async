@@ -5,7 +5,7 @@ title = "Print out long-running chatbot tasks"
 
 ### Functionality
 
-In {{ 07-pin pr }}, our colleague has been working on the performance of the `chatbot` crate functions. Now, these functions take a variable length of time between 0 and 5 seconds. Your task is to emit metrics that helps us understand when a given `/chat` call is taking too long. Specifically, after starting a `query_chat` call, then every second, you should print out the number of seconds that have elapsed. For instance, if a query takes 3.5 seconds, then you should print:
+In {{07-pin.pr}}, our colleague has been working on the performance of the `chatbot` crate functions. Now, these functions take a variable length of time between 0 and 5 seconds. Your task is to emit metrics that helps us understand when a given `/chat` call is taking too long. Specifically, after starting a `query_chat` call, then every second, you should print out the number of seconds that have elapsed. For instance, if a query takes 3.5 seconds, then you should print:
 
 ```
 Waiting for 1 seconds
@@ -65,7 +65,7 @@ async fn example(a: i32) -> i32 {
 }
 ```
 
-Recall from {{ 03-spawn issue }} how the `example` function is lowered into a state machine. Its state machine would look something like:
+Recall from {{03-spawn.issue}} how the `example` function is lowered into a state machine. Its state machine would look something like:
 
 ```rust
 enum ExampleState {

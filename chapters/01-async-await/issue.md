@@ -3,7 +3,7 @@ title = "Port server to async"
 +++
 ## Task
 
-In {{ 01-async-await pr }}, the `miniserve` library was refactored to use Rust's async feature. Unfortunately this broke the build, because the new API is not backwards-compatible. Your task is to port the `server` crate so it has the same functionality as before, but such that it works with the new miniserve API. Commit your solution to {{ 01-async-await pr }}.
+In {{01-async-await.pr}}, the `miniserve` library was refactored to use Rust's async feature. Unfortunately this broke the build, because the new API is not backwards-compatible. Your task is to port the `server` crate so it has the same functionality as before, but such that it works with the new miniserve API. Commit your solution to {{01-async-await.pr}}.
 
 ## Background
 

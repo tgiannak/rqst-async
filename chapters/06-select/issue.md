@@ -5,7 +5,7 @@ title = "Add backend support for cancellation"
 
 ### Functionality
 
-In {{ 06-select pr }}, a colleague added support on the frontend for cancellation. A user can click a new "Cancel" button which will send a post request to the `/cancel` route. When this route is posted, then the server should cancel any `query_chat` computation that is currently running.
+In {{06-select.pr}}, a colleague added support on the frontend for cancellation. A user can click a new "Cancel" button which will send a post request to the `/cancel` route. When this route is posted, then the server should cancel any `query_chat` computation that is currently running.
 
 To handle the case of cancellation, the frontend now expects a new field in response from the `/chat` route. The response should have a `type` field that contains the string `"Success"` or `"Cancelled"`. If the `/cancel` route is called while `/chat` is waiting on `query_chat`, then the `/chat` route should return `{type: "Cancelled"}`. Otherwise, it should return a success message like:
 

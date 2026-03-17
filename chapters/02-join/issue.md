@@ -5,7 +5,7 @@ title = "Integrate chatbot crate"
 
 ### Functionality
 
-In {{ 02-join pr }}, a colleague has implemented a more intelligent chatbot in the `chatbot` crate. Your task is to integrate the chatbot into the `/chat` route handler of the application server. Specifically, you should use `chatbot::query_chat` on the current conversation to generate a list of possible responses, and then use `chatbot::gen_random_number` to randomly select from amongst the list of responses. You will need to add the `chatbot` dependency to `crates/server/Cargo.toml`.
+In {{02-join.pr}}, a colleague has implemented a more intelligent chatbot in the `chatbot` crate. Your task is to integrate the chatbot into the `/chat` route handler of the application server. Specifically, you should use `chatbot::query_chat` on the current conversation to generate a list of possible responses, and then use `chatbot::gen_random_number` to randomly select from amongst the list of responses. You will need to add the `chatbot` dependency to `crates/server/Cargo.toml`.
 
 ### Performance
 

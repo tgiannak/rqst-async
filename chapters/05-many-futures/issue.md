@@ -5,7 +5,7 @@ title = "Integrate retrieval-augmented generation"
 
 ### Functionality
 
-In {{ 05-many-futures pr }}, your colleague modified the `Chatbot` API to support *retrieval-augmented generation* (RAG), a cutting-edge chatbot technique. To use RAG, when a user provides a set of input messages, you should first call `Chatbot::retrieval_documents` to generate a set of paths to documents that the model thinks are relevant to the query. Then you should read those files from disk, and pass their contents in the new `docs` parameter of `Chatbot::query_chat`. 
+In {{05-many-futures.pr}}, your colleague modified the `Chatbot` API to support *retrieval-augmented generation* (RAG), a cutting-edge chatbot technique. To use RAG, when a user provides a set of input messages, you should first call `Chatbot::retrieval_documents` to generate a set of paths to documents that the model thinks are relevant to the query. Then you should read those files from disk, and pass their contents in the new `docs` parameter of `Chatbot::query_chat`. 
 
 ### Performance
 
@@ -25,7 +25,7 @@ Note that at the time of writing, Tokio's async I/O is a simple wrapper over `st
 
 ### Waiting on many futures
 
-As discussed in {{ 02-join issue }}, if you need to wait on many futures, it's bad practice to `.await` in a sequence, and you should prefer to [`join!`] the futures instead. `join!` works well for a fixed number of futures, but you need different primitives for a variable number of futures.
+As discussed in {{02-join.issue}}, if you need to wait on many futures, it's bad practice to `.await` in a sequence, and you should prefer to [`join!`] the futures instead. `join!` works well for a fixed number of futures, but you need different primitives for a variable number of futures.
 
 There are a few different approaches depending on your goal. The most straightforward is to use a function like [`futures::future::join_all`] in the [`futures`] utility crate. For example:
 

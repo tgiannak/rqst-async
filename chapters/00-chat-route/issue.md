@@ -39,7 +39,7 @@ If your implementation works, then you should be able to see your response appea
 
 <img width="241" alt="Screenshot 2024-07-30 at 3 10 55 PM" src="https://github.com/user-attachments/assets/bec36a1e-7036-43d3-bd9f-7f0b3390c467">
 
-You should commit your changes to the `00-chat-route` branch, and merge the pull request {{ 00-chat-route pr }} once you've completed the task. This will auto-close this issue, and you can proceed to the next task by running `repo-quest` in your terminal in the folder containing this repository.
+You should commit your changes to the `00-chat-route` branch, and merge the pull request {{00-chat-route.pr}} once you've completed the task. This will auto-close this issue, and you can proceed to the next task by running `repo-quest` in your terminal in the folder containing this repository.
 
 ## Background
 
