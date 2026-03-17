@@ -10,7 +10,7 @@ jobs:
       - name: Install Rust toolchain
         uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: Install RepoQuest
-        uses: baptiste0928/cargo-install@v3.4
+        uses: baptiste0928/cargo-install@v3.4.0
         with:
           crate: repo-quest
           git: https://github.com/cognitive-engineering-lab/repo-quest.git
